@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: rgba(25, 32, 32, 0.895);
+}
+
+div {
+    background-color: rgba(88, 172, 144, 0.185);
+    border: none;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 15px;
+    height: 100px;
+    padding-right: 20px;
+    background-color: rgba(226, 197, 178, 0.301);
+}
+
+button {
+    font-size: 20px;
+    width: 90px;
+    border: none;
+    margin: 5px;
+    background-color: rgba(124, 208, 211, 0.295);
+    color: rgba(24, 74, 75, 0.895);
+    transition: all .07s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.operator {
+    height: 16.6666%;
+    width: 50px;
+    background-color: rgba(95, 158, 160, 0.15);
+}
+.number {
+    height: 90px;
+}
+.clicked {
+    background-color: rgba(118, 198, 201, 0.425);
+    outline: none;
+    transform: scale(0.9);
+}
+
+kbd {
+    font-size: 10px;
+}
+
+.buttonsArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0);
+}
+
+.numberArea {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+    align-content: space-between;
+    width: auto;
+    height: auto;
+    background-color: rgba(0,0,0,0);
+}
+
+.operatorArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(0,0,0,0);
+}
+
+.disabled {
+    background-color: rgba(16, 19, 19, 0.017) !important;
+    border-style: solid;
+    color:rgba(95, 158, 160, 0.15);
+}
